@@ -75,24 +75,36 @@
             /* push behind text */
             max-width: 70%;
             /* control image size */
-            pointer-events: none;
-            /* prevents blocking clicks on links */
+            cursor: default;
+        }
+
+        .bi {
+            color: #e2dccc;
+        }
+        .navbar-toggler {
+            background-color: beige;
+        }
+        .overlay-container {
+            width: 10%;
+            z-index: 2;
+            top: 2%;
+            left: 90%
         }
     </style>
 </head>
 
 <body>
 
-    <header class=" container-fluid">
+    <header class="container-fluid">
         <nav class="navbar bg-transparent fixed-top">
             <div class="container-fluid">
-                <button class="navbar-toggler float-start" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler float-start" data-bs-theme="light" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-start w-100 pt-5 ps-5 ps-md-3 ps-sm-2" tabindex="-1"
+                <div class="offcanvas offcanvas-start w-100 pt-5 ps-lg-5 ps-md-3 ps-sm-1" tabindex="-1"
                     id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #192d45;">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header ms-md-3 ms-sm-2">
                         <span class="btn me-2 border rounded-0 custom-button-effect">TERM DATES
                             &#8594</span>
                         <span class="btn me-2 border rounded-0 custom-button-effect">Login
@@ -104,7 +116,7 @@
                     </div>
                     <div class="offcanvas-body position-relative">
                         <img src="./assets/final_logo-removebg-preview.png" class="img-fluid custom-img " alt="">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 ps-md-3 ps-sm-2 ">
+                        <ul class="navbar-nav justify-content-end d-inline-block pe-5 ps-md-3 ps-sm-2 ">
                             <li class="nav-item">
                                 <a class="nav-link custom-nav-link-color" aria-current="page" href="#">Home</a>
                             </li>
@@ -137,16 +149,36 @@
                         </ul>
 
                         <div class="mt-5 ps-5 ps-md-3 ps-sm-2">
-                            <span><i class="bi bi-facebook text-white fs-5 me-2"></i></span>
-                            <span><i class="bi bi-twitter-x text-white fs-5 me-2"></i></span>
-                            <span><i class="bi bi-instagram text-white fs-5 me-2"></i></span>
-                            <span><i class="bi bi-linkedin text-white fs-5 me-2"></i></span>
+                            <span><a href="#"><i class="bi bi-facebook fs-5 me-2"></i></a></i></span>
+                            <span><a href="#"><i class="bi bi-twitter-x fs-5 me-2"></i></a></span>
+                            <span><a href="#"><i class="bi bi-instagram fs-5 me-2"></i></a></span>
+                            <span><a href="#"><i class="bi bi-linkedin fs-5 me-2"></i></a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <div class="container-fluid position-relative p-0">
+        <div class="overlay-container position-absolute bg-dark text-white">
+            hello
+        </div>
+        <div class="carousel slide carousel-fade p-0 m-0" data-bs-interval="2000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/college-5757815_1280.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/library-869061_1280.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/university-2104580_1280.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

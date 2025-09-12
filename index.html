@@ -17,7 +17,14 @@
     <link rel="stylesheet" href="index.css">
     <title>Home-page</title>
 
+    <style>
+        .slide-effect {
+            transition: 0.3s ease, opacity 0.3s ease;
+        }
+    </style>
+
 </head>
+
 <body>
     <!-- Head section -->
     <header class="container-fluid">
@@ -48,7 +55,7 @@
                                 <a class="nav-link custom-nav-link-color" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link custom-nav-link-color" href="#">About</a>
+                                <a class="nav-link custom-nav-link-color" href="#" onclick="openTab('about', this)">About</a>
                             </li>
                             <li class="nav-item dropdown" data-bs-theme="dark">
                                 <a class="nav-link custom-nav-link-color dropdown-toggle " href="#" role="button"
@@ -74,7 +81,19 @@
                                 <a class="nav-link custom-nav-link-color" href="#">CONTACT US</a>
                             </li>
                         </ul>
-
+  
+                        <!-- side links for header
+                        <div class="position-absolute text-white border-start slide-effect"
+                               id="about" style="width: 500px; height: auto; top:20%; left: 30%; display:none;" >
+                               <ol type="1">
+                                <li> link</li>
+                                <li> link</li>
+                                <li> link</li>
+                                <li> link</li>
+                                <li> link</li>
+                               </ol>
+                        </div>
+                            -->
                         <div class="mt-5 ps-5 ps-md-3 ps-sm-2">
                             <span><a href="#" class="bi-color"><i class="bi bi-facebook fs-5 me-2"></i></a></i></span>
                             <span><a href="#" class="bi-color"><i class="bi bi-twitter-x fs-5 me-2"></i></a></span>
@@ -82,6 +101,8 @@
                             <span><a href="#" class="bi-color"><i class="bi bi-linkedin fs-5 me-2"></i></a></span>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </nav>
@@ -115,7 +136,7 @@
         <div class="position-absolute overlay overlay-hero">
             <h4 class="hero-heading-h4 text-white"><i>Welcome to</i></h4>
             <h1 class="hero-heading-h6 text-white">KUALACUBS <br> SCHOOL</h1>
-            <a href="#slidedown"  class="btn rounded-circle text-dark" style="background-color: white;">
+            <a href="#slidedown" class="btn rounded-circle text-dark" style="background-color: white;">
                 <i class="bi d-inline-block bi-chevron-double-down arrow-animation" style="font-size: larger;"></i>
             </a>
         </div>
@@ -145,13 +166,13 @@
 
     <!-- divider div -->
     <div class="divider container-fluid d-flex justify-content-center align-items-center p-3 p-sm-1 p-md-2"
-            id="slidedown">
+        id="slidedown">
         A progressive school on an ancient site in the heart of the world's most vibrant city
     </div>
 
     <!-- about section -->
     <div class="position-relative d-flex flex-column justify-content-center align-items-center text-center p-4"
-        style="background: var(--bg-color); min-height: 500px;" >
+        style="background: var(--bg-color); min-height: 500px;">
 
         <img src="./assets/final_logo-w-removebg-preview.png" class="about-section-img img-fluid" alt="">
 
@@ -188,7 +209,7 @@
         <div class="owl-carousel owl-theme">
             <div class="item position-relative">
                 <div class=" top-0 start-0 position-absolute text-center d-inline-flex p-2 opacity-75"
-                     style="background-color: var(--bg-color); color: var(--link-color);">
+                    style="background-color: var(--bg-color); color: var(--link-color);">
                     <span>Co-Education</span>
                 </div>
                 <a href="#">
@@ -215,7 +236,7 @@
             </div>
             <div class="item position-relative">
                 <div class=" top-0 start-0 position-absolute text-center d-inline-flex p-2 opacity-75"
-                     style="background-color: var(--bg-color); color: var(--link-color);">
+                    style="background-color: var(--bg-color); color: var(--link-color);">
                     <span>Admissions</span>
                 </div>
                 <a href="#">
@@ -272,7 +293,8 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
                         <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/03/Yard-scaled.jpg" class="img-fluid object-fit-cover h-100 w-100" alt="">
+                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/03/Yard-scaled.jpg"
+                                class="img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">ABOUT KUALACUBS</span>
                         </a>
                     </div>
@@ -281,8 +303,9 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
 
-                        <a href="#"><img src="https://www.westminster.org.uk/wp-content/uploads/2025/03/Greaze-2025-EH-81-scaled.jpg" class=" img-fluid object-fit-cover h-100 w-100"
-                                alt="">
+                        <a href="#"><img
+                                src="https://www.westminster.org.uk/wp-content/uploads/2025/03/Greaze-2025-EH-81-scaled.jpg"
+                                class=" img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">ADMISSIONS</span>
                         </a>
                     </div>
@@ -290,8 +313,9 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
 
-                        <a href="#"><img src="https://www.westminster.org.uk/wp-content/uploads/2025/02/MicaelaKarina_WestminsterSchool-385.jpg" class=" img-fluid object-fit-cover h-100 w-100"
-                                alt="">
+                        <a href="#"><img
+                                src="https://www.westminster.org.uk/wp-content/uploads/2025/02/MicaelaKarina_WestminsterSchool-385.jpg"
+                                class=" img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">ACADEMIC LIFE</span>
                         </a>
 
@@ -301,8 +325,9 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
 
-                        <a href="#"><img src="https://www.westminster.org.uk/wp-content/uploads/2025/02/IMG_1086-v2-scaled.jpg" class=" img-fluid object-fit-cover h-100 w-100"
-                                alt="">
+                        <a href="#"><img
+                                src="https://www.westminster.org.uk/wp-content/uploads/2025/02/IMG_1086-v2-scaled.jpg"
+                                class=" img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">SCHOOL LIFE</span>
                         </a>
 
@@ -311,8 +336,9 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
 
-                        <a href="#"><img src="https://www.westminster.org.uk/wp-content/uploads/2024/10/GEORGINA01889-scaled.jpg" class=" img-fluid object-fit-cover h-100 w-100"
-                                alt="">
+                        <a href="#"><img
+                                src="https://www.westminster.org.uk/wp-content/uploads/2024/10/GEORGINA01889-scaled.jpg"
+                                class=" img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">CO-CURRICULUM</span>
                         </a>
 
@@ -321,8 +347,9 @@
                 <div class="col">
                     <div class="card shadow position-relative gallery-card-bg rounded-0">
 
-                        <a href="#"><img src="https://www.westminster.org.uk/wp-content/uploads/2024/11/IMG_20240709_202243-1-scaled-e1731671780116.jpg" class=" img-fluid object-fit-cover h-100 w-100"
-                                alt="">
+                        <a href="#"><img
+                                src="https://www.westminster.org.uk/wp-content/uploads/2024/11/IMG_20240709_202243-1-scaled-e1731671780116.jpg"
+                                class=" img-fluid object-fit-cover h-100 w-100" alt="">
                             <span class="gallery-img-text position-absolute">PARTNERSHIPS</span>
                         </a>
                     </div>
@@ -332,7 +359,6 @@
     </div>
 
     <!-- join us section -->
-
     <div class="container-fluid d-flex justify-content-center align-items-center py-5"
         style="background-color: var(--link-color);">
         <div class="row w-75 text-center text-md-start">
@@ -371,8 +397,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer section -->
 
     <!-- Footer -->
     <footer class="container-fluid py-4" style="background-color: var(--bg-color); color: var(--link-color);">
@@ -462,6 +486,32 @@
             }
         });
     </script>
-</body>
 
+    <!-- script for side link header 
+    <script>
+        // Function that is used to switch between tabs 
+        function openTab(tabName, element) {
+            // Hide all tab content
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Remove 'active' class from all tabs
+            var tabs = document.getElementsByClassName("nav-link");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // Show the selected tab content and mark its tab as active
+            document.getElementById(tabName).style.display = "block";
+            element.classList.add("active");
+        }
+
+        // Ensure the first tab is always displayed initially
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("Add_course").style.display = "block";
+        });
+    </script> -->
+</body>
 </html>

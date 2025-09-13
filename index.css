@@ -36,6 +36,26 @@ body {
 }
 
 /* =========================================================
+   Corners
+========================================================= */
+.round-top-left {
+  border-top-left-radius: 15px; /* adjust px as needed */
+}
+
+.round-top-right {
+  border-top-right-radius: 15px;
+}
+
+.round-bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.round-bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
+
+/* =========================================================
    Buttons
 ========================================================= */
 

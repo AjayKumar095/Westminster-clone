@@ -49,18 +49,7 @@
             padding-bottom: 20px;
         }
 
-        .gallery-img {
-            height: 250px;
-            /* same height for all images */
-            object-fit: cover;
-            /* crop to fill the box */
-        }
-
         @media (max-width: 768px) {
-            .header-container {
-                min-height: 100vh;
-            }
-
             .overlay-list {
                 top: 40%;
                 right: inherit;
@@ -82,6 +71,7 @@
                 margin: 0 auto;
                 /* Ensures div is centered */
                 width: 70%;
+
             }
         }
     </style>
@@ -107,44 +97,32 @@
             onclick="toggle_name()">
             Open
         </button>
-        <!-- Overlay list container 
+        <!-- Overlay list container
 
-        <div class="overlay overlay-list collapse d-lg-block position-absolute text-white" id="overlayList">
-            <div class="row pe-2 mx-1 overflow-y-scroll">
-                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">4+, 7+ and 8+ Entry</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">11+ Entry</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">13+ Entry</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">16+ Entry</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Scholarships and Bursaries</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                 <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">International Applicants</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                 <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">School Fees</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-                 <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
-                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Open Days</a>
-                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
-                </div>
-            </div>
-        </div>-->
+    <div class="overlay overlay-list collapse d-lg-block position-absolute text-white" id="overlayList">
+      <div class="row pe-2">
+        <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
+          <a href="#" class="overlay-row-element" style="text-decoration: none;">Our Ethos, Values and Vision</a>
+          <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+        </div>
+        <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
+          <a href="#" class="overlay-row-element" style="text-decoration: none;">Senior Management Committee</a>
+          <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+        </div>
+        <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+          <a href="#" class="overlay-row-element" style="text-decoration: none;">Governing Body</a>
+          <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+        </div>
+        <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+          <a href="#" class="overlay-row-element" style="text-decoration: none;">Teaching Staff</a>
+          <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+        </div>
+        <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+          <a href="#" class="overlay-row-element" style="text-decoration: none;">Contact Us</a>
+          <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+        </div>
+      </div>
+    </div> -->
 
         <!-- Overlay list container improved version -->
         <div class="overlay overlay-list collapse d-lg-block position-absolute text-white" id="overlayList">
@@ -152,49 +130,49 @@
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    4+, 7+ and 8+ Entry
+                    Our Ethos, Values and Vision
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    11+ Entry
+                    Senior Management Committee
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    13+ Entry
+                    Governing Body
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    16+ Entry
+                    Teaching Staff
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    Scholarships and Bursaries
+                    Policies and Reports
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    International Applicants
+                    Job Vacancies
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    School Fees
+                    Term Dates
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
                 <a href="#"
                     class="list-group-item overlay-row-bg d-flex justify-content-between align-items-center text-white text-decoration-none">
-                    Open Days
+                    Contact Us
                     <i class="bi bi-arrow-right-square"></i>
                 </a>
 
@@ -207,11 +185,12 @@
         <div class="round-top-right bg-white d-none p-4 d-lg-block position-absolute bottom-0 start-0"
             style="width: 35%;">
             <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Home</a></li>
-            </ol>
-        </nav>
-            <h1 style="color: rgb(82, 82, 82);">Admissions</h1>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">About Kualakubs</a></li>
+                </ol>
+            </nav>
+            <h1 style="color: rgb(82, 82, 82);">Contact Us</h1>
         </div>
 
     </div>
@@ -221,142 +200,92 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Admission</li>
+                <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">About Kualakubs</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
             </ol>
         </nav>
     </div>
 
-
-    <!-- over histoRy -->
-    <div class="container-fluid mt-5 py-5" style="background-color: var(--bg-color);">
-        <div class="content-layout" style="color: var(--link-color);">
-
-            <p>Each year Westminster School offers places to boys and girls at both 13+ and 16+ entry, while Westminster
-                Under School admits pupils at the 4+, 7+, 8+ and 11+ entry points. Information regarding 4+, 7+, 8+ and
-                11+ entry can be found on the Under School’s website.</p>
-            <p>The pages in this section of the website provide details specifically relating to 13+ and 16+ entry to
-                Westminster School, outlining the application process, registration timelines, eligibility criteria,
-                fees and opportunities for assistance with fees (Scholarships and Bursaries), to ensure that prospective
-                pupils and their parents have everything needed to be able to apply for a place at the School. To
-                support the application process, we have a dedicated and experienced admissions team, who are available
-                to answer any questions applicants may have and who make applying to the School easy and undaunting.
-                Find out when your child is able to apply to join the School and view the registration timeline using
-                the personalised registration age checker below.</p>
-            <a href="#"><button class="btn border rounded-0 border-light custom-button-effect">Archives
-                    &amp; Collections →</button></a>
-        </div>
-    </div>
-
-    <!-- Image gallery -->
-    <div class="album py-5">
-        <h5 class="text-center">Admission to Westminster School</h5>
-        <p class="text-center">Find out more on our Admissions pages</p>
-
-        <div class="container mt-4" style="width: 75%;">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2023/05/GWL_6725-768x511.jpg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">4+, 7+ AND 8+ ENTRY</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/02/WUS-11-Entry-768x644.jpeg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">11+ ENTRY</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/02/MicaelaKarina_WestminsterSchool-8-768x512.jpg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">13+ ENTRY</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/02/MicaelaKarina_WestminsterSchool-328-768x512.jpg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">16+ ENTRY</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2025/03/DSC02710-768x512.jpg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">SCHOLARSHIPS AND BURSARIES</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow position-relative gallery-card-bg rounded-0 h-100">
-                        <a href="#">
-                            <img src="https://www.westminster.org.uk/wp-content/uploads/2023/01/College-e1672694662796-768x512.jpeg"
-                                class="img-fluid w-100 gallery-img" alt="">
-                            <span class="gallery-img-text position-absolute">SCHOOL LIFE</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Admissions contacts -->
+    <!-- contact table -->
     <div class="container my-5" style="max-width: 75%;">
-        <h5 class=" text-center my-3">Admissions contacts</h5>
-        <div class="row justify-content-center text-center">
-            <!-- Column 1 -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="p-4 shadow h-100 text-wrap"
-                    style="background-color: var(--bg-color); color: var(--link-color);">
-                    <h3>4+, 7+, 8+ and 11+</h3>
-                    <p>Westminster Under School</p>
-                    <a href="#" class="d-inline-block text-decoration-none"
-                        style="word-break: break-all; overflow-wrap: break-word;">wusregistrar@westminster.org.uk</a>
-                    <p>+44 (0)20 7821 5788</p>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="p-4 shadow h-100" style="background-color: var(--bg-color); color: var(--link-color);">
-                    <h3>13+</h3>
-                    <p>Westminster School</p>
-                    <a href="#" class="text-decoration-none d-inline-block"
-                        style="word-break: break-all; overflow-wrap: break-word;">registrar@westminster.org.uk </a>
-                    <p>+44 (0)20 7963 1003</p>
-                </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="p-4 shadow h-100" style="background-color: var(--bg-color); color: var(--link-color);">
-                    <h3>16+</h3>
-                    <p>Westminster School</p>
-                    <a href="#" class="text-decoration-none d-inline-block"
-                        style="word-break: break-all; overflow-wrap: break-word;">sixthformadmissions@westminster.org.uk</a>
-                    <p>+44 (0)20 7963 1003</p>
-                </div>
-            </div>
+        <p>Westminster School <br>
+            17 Dean's Yard <br>
+            London SW1P 3PF</p>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle text-start">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Department</th>
+                        <th scope="col">Telephone</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General Enquiries</td>
+                        <td>+44 (0)20 7963 1000</td>
+                        <td><a href="mailto:enquiries@westminster.org.uk">enquiries@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>Head Master, Dr Gary Savage</td>
+                        <td>+44 (0)20 7963 1042</td>
+                        <td><a href="mailto:headmaster@westminster.org.uk">headmaster@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>13+ and 16+ Admissions</td>
+                        <td>+44 (0)20 7963 1003</td>
+                        <td><a href="mailto:registrar@westminster.org.uk">registrar@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>4+, 7+, 8+ and 11+ Admissions</td>
+                        <td>+44 (0)20 7821 5788</td>
+                        <td><a href="mailto:WUSregistrar@westminster.org.uk">WUSregistrar@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>Media, communications and website</td>
+                        <td>+44 (0)20 7963 1178</td>
+                        <td><a href="mailto:communications@westminster.org.uk">communications@westminster.org.uk</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Development Office</td>
+                        <td>+44 (0)20 7963 1115</td>
+                        <td><a href="mailto:developmentteam@westminster.org.uk">developmentteam@westminster.org.uk</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bursar</td>
+                        <td>+44 (0)20 7963 1028</td>
+                        <td><a href="mailto:bursar@westminster.org.uk">bursar@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>Accounts Department</td>
+                        <td>+44 (0)20 7963 1029</td>
+                        <td><a href="mailto:billing@westminster.org.uk">billing@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>HR</td>
+                        <td>+44 (0)20 7963 1057</td>
+                        <td><a href="mailto:recruitment@westminster.org.uk">recruitment@westminster.org.uk</a></td>
+                    </tr>
+                    <tr>
+                        <td>Archivist</td>
+                        <td>+44 (0)20 7963 1110</td>
+                        <td><a href="mailto:archives@westminster.org.uk">archives@westminster.org.uk</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
+
+
+
+
+    <!-- divider div -->
+    <div class="divider container-fluid d-flex justify-content-center align-items-center p-3 p-sm-1 p-md-2"
+        id="slidedown" style=" color: var(--link-color); background-color: var(--bg-color);">
+        <a href="#" class=" text-decoration-none" style=" color: var(--link-color);"><i
+                class="bi bi-arrow-left me-1"></i>back to About Westminster</a>
     </div>
 
     <!-- join us section -->

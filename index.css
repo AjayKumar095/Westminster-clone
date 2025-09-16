@@ -267,8 +267,6 @@ body {
    Divider Section
 ========================================================= */
 .divider {
-    background-color: var(--link-color);
-    color: var(--bg-color);
     min-height: 70px;
     font-size: large;
     text-transform: uppercase;

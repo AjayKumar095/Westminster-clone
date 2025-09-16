@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Blog page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .header-container {
+            background: url('https://www.westminster.org.uk/wp-content/uploads/2025/03/ts-rehearsals_10-scaled-e1743605223984.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 90vh;
+            /* at least full screen */
+            height: auto;
+            /* allow to expand */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 80px;
+            /* spacing from top */
+            padding-bottom: 60px;
+            /* spacing above footer */
+        }
+
+        .overlay-list {
+            top: 40%;
+            right: 4%;
+            width: 25%;
+
+        }
+
+        .content-layout {
+            column-count: 2;
+            column-gap: 50px;
+            text-align: justify;
+            width: 1200px;
+            max-width: 90%;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .overlay-list {
+                top: 40%;
+                right: inherit;
+                margin: 0 auto;
+                /* Ensures div is centered */
+                width: 40%;
+
+            }
+
+            .content-layout {
+                column-count: 1;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .overlay-list {
+                top: 35%;
+                right: inherit;
+                margin: 0 auto;
+                /* Ensures div is centered */
+                width: 70%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header container -->
+    <div class="container-fluid header-container d-flex">
+        <!-- Overlay logo header -->
+        <div class="overlay overlay-container position-absolute text-white">
+            <div class="row pe-2">
+                <div class="col-12 mb-1 d-flex justify-content-center align-content-center"
+                    style="background-color: var(--link-color); opacity: 0.75;">
+                    <img src="./assets/headerlogo.png" alt="" class="mt-4 mt-md-3 mb-4 mb-md-3 img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay list toggle (button) -->
+        <button class="btn overlay-btn position-absolute rounded-0 overlay d-lg-none w-100 bottom-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#overlayList" aria-expanded="false" aria-controls="overlayList"
+            style="background-color: var(--bg-color); color: var(--link-color);" id="overlay-btn-toggler"
+            onclick="toggle_name()">
+            Open
+        </button>
+        <!-- Overlay list container -->
+
+        <div class="overlay overlay-list collapse d-lg-block position-absolute text-white" id="overlayList">
+            <div class="row pe-2">
+                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
+                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Teaching Staff</a>
+                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+                </div>
+                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between align-content-center">
+                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Policies and Reports</a>
+                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+                </div>
+                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Governing Body</a>
+                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+                </div>
+                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Term Dates</a>
+                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+                </div>
+                <div class="col-12 mb-1 overlay-row-bg p-2 d-flex justify-content-between">
+                    <a href="#" class="overlay-row-element" style="text-decoration: none;">Contact Us</a>
+                    <span><i class="bi bi-arrow-right-square overlay-row-element"></i></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Overlay bottom trip -->
+        <div class="round-top-right bg-white d-none p-4 d-lg-block position-absolute bottom-0 start-0"
+            style="width: 35%;">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">About Kualakubs</a></li>
+                </ol>
+            </nav>
+            <h1 style="color: rgb(82, 82, 82);">School News</h1>
+        </div>
+
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="mt-3 d-flex justify-content-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" class=" text-decoration-none">About Kualakubs</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+    </div>
+
+   <!-- Latest news section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    
+    <!-- Left Column (Image + Overlay) -->
+    <div class="col-lg-6 col-md-12 mb-3 d-flex justify-content-center">
+      <div class="position-relative w-100" style="max-width: 600px; height: 350px;">
+        <div class="triangle position-absolute">
+          <span class="triangle-text">Latest <br> News</span>
+        </div>
+        <img src="./assets/college-5757815_1280.jpg" 
+             class="img-fluid h-100 w-100 object-fit-cover shadow" 
+             alt="News Image">
+        <div class="position-absolute bottom-0 w-100 text-center text-white py-2"
+             style="background-color: var(--bg-color); opacity: 0.85;">
+          <p class="mb-0">Individual success; institutional love of learning — Westminster GCSE Results 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (Links + Content) -->
+    <div class="col-lg-6 col-md-12 mb-3 d-flex flex-column justify-content-center">
+      <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-start mb-3">
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">About</a></li>
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">Academic Life</a></li>
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">Admissions</a></li>
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">Co-Curriculum</a></li>
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">Partnerships</a></li>
+        <li class="m-1"><a href="#" class="btn border rounded-0 custom-button-effect-dark">School Life</a></li>
+      </ul>
+      <div class="p-3 shadow rounded-2 text-center text-lg-start">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus earum veritatis velit dolorum, 
+        quae mollitia neque eaque nemo provident nostrum numquam aliquam saepe placeat.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+    <!-- join us section -->
+    <div class="container-fluid d-flex justify-content-center align-items-center py-5"
+        style="background-color: var(--link-color);">
+        <div class="row w-75 text-center text-md-start">
+
+            <!-- Join Us -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="d-flex align-items-center border-bottom border-dark mb-3">
+                    <span
+                        class="d-inline-flex justify-content-center align-items-center border-bottom-0 border border-dark me-3"
+                        style="width:60px; height:60px;">
+                        <i class="bi bi-person-check fs-3"></i>
+                    </span>
+                    <h3 class="mb-0 fw-bold">JOIN US</h3>
+                </div>
+                <p class="mb-2">
+                    Find out when your child is able to join the School using the personalised age checker and timeline.
+                </p>
+                <a href="#" class="text-decoration-none fw-semibold">Read More &#8594;</a>
+            </div>
+
+            <!-- Support Us -->
+            <div class="col-md-6">
+                <div class="d-flex align-items-center border-bottom border-dark mb-3">
+                    <span
+                        class="d-inline-flex justify-content-center align-items-center border-bottom-0 border border-dark  me-3"
+                        style="width:60px; height:60px;">
+                        <i class="bi bi-person-raised-hand fs-3"></i>
+                    </span>
+                    <h3 class="mb-0 fw-bold">SUPPORT US</h3>
+                </div>
+                <p class="mb-2">
+                    Kualacubs School gratefully welcomes donations to support fundraising efforts across the School
+                    community.
+                </p>
+                <a href="#" class="text-decoration-none fw-semibold">Read More &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid py-4" style="background-color: var(--bg-color); color: var(--link-color);">
+        <!-- Row 1: Links -->
+        <div class="row justify-content-center mb-3">
+            <div class="col d-flex justify-content-center">
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2">ABOUT</li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 1</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 2</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 3</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2">ADMISSION</li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 1</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 2</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 3</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2">SCHOOL LIFE</li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 1</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 2</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 3</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2">QUICK LINKS</li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 1</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 2</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 3</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 4</a></li>
+                </ul>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2">WEBSITES</li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 1</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 2</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 3</a></li>
+                    <li><a href="#" class="footer-link text-decoration-none">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Row 2: Social icons with heading right-aligned -->
+        <div class="container row align-items-center mb-3 ms-lg-5">
+            <div class="col">
+                <h6 class="mb-2">Social</h6>
+                <a href="#" class="bi-color me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="bi-color me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="bi-color me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="bi-color"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- Row 3: Copyright -->
+        <div class="row">
+            <div class="col text-center small">
+                Copyright © 2025 Kualacubs School<br>
+                Registered Charity No 312728
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function toggle_name() {
+
+            const btn = document.getElementById('overlay-btn-toggler');
+
+            if (btn.innerText === "Open") {
+                btn.innerHTML = "Close";
+            }
+            else {
+                btn.innerText = "Open";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

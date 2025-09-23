@@ -1,0 +1,41 @@
+project_root/
+│── manage.py
+│── requirements.txt
+│── .env
+│── config/                     # Global project settings
+│   │── __init__.py
+│   │── settings.py              # Django settings
+│   │── urls.py                  # Root URL routes
+│   │── wsgi.py
+│   │── asgi.py
+│
+│── apps/                        # All feature-specific apps
+│   │── users/                   # Handles user auth, profile, permissions
+│   │   │── models.py
+│   │   │── views.py
+│   │   │── urls.py
+│   │   │── serializers.py       # (if using DRF)
+│   │   │── services.py
+│   │   │── tests.py
+│   │
+│   │── data/                    # Data management, storage, processing
+│   │   │── models.py
+│   │   │── tasks.py             # Celery tasks if async jobs
+│   │   │── services.py
+│   │
+│   │── templates_app/           # Handles dynamic template rendering
+│   │   │── views.py
+│   │   │── urls.py
+│   │   │── templates/
+│   │
+│   │── static_app/              # Static files serving (CSS, JS, images)
+│   │   │── static/
+│
+│── common/                      # Shared utilities
+│   │── utils.py
+│   │── mixins.py
+│   │── middleware.py
+│
+│── media/                       # User-uploaded files
+│── static/                      # Collected static files
+│── logs/                        # Log files
